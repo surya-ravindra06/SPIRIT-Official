@@ -1,0 +1,48 @@
+# Data Processing Configuration
+data:
+  start_date: "YYYY-MM-DD"
+  end_date: "YYYY-MM-DD"
+  base_save_path: "/path/to/your/data"
+  main_csv_path: "/path/to/main.csv"
+  raw_images_dir: "raw_images"
+  processed_images_dir: "processed_images"
+  final_dataset_name: "processed_dataset.csv"
+
+# Hugging Face Configuration
+huggingface:
+  token: "your_hf_token_here"
+  dataset_name: "your-username/dataset-name"
+
+# Embeddings Configuration
+embeddings:
+  model_name: "google/vit-huge-patch14-224-in21k"
+  output_file: "/path/to/embeddings.json"
+  batch_size: 32
+
+# Training Configuration
+training:
+  wandb_key: "your_wandb_key_here"
+  nowcast_model_path: "/path/to/nowcast_model.json"
+  forecast_model_path: "/path/to/forecast_model.pth"
+  study_name: "spirit_optimization"
+
+# Model Parameters
+nowcasting:
+  study_name: "spirit_nowcasting"
+  n_trials: 100
+  model_type: "xgboost"  # Options: "xgboost", "randomforest", "mlp"
+
+forecasting:
+  study_name: "spirit_forecasting"
+  n_trials: 50
+  num_past_frames: 6
+  num_future_frames: 24
+  batch_size: 32
+  num_epochs: 1000
+
+# Physics Parameters
+physics:
+  latitude: 39.742
+  longitude: -105.18
+  albedo: 0.2
+  dc_ac_ratio: 1.4
