@@ -679,63 +679,6 @@ def run_complete_pipeline(config):
 {"image_id": "timestamp_002", "embedding": [0.789, -0.012, ...]}
 ```
 
-## Performance and Optimization
-
-### Memory Management
-- **Batch Processing**: Process images in configurable batch sizes
-- **Lazy Loading**: Load data on-demand to reduce memory footprint
-- **Garbage Collection**: Explicit cleanup of large objects
-
-### Computational Optimization
-- **GPU Acceleration**: Automatic GPU detection and usage
-- **Parallel Processing**: Multi-core support for CPU-intensive tasks
-- **Caching**: Intelligent caching of computed features
-
-### Model Persistence
-- **Checkpoint Saving**: Regular model checkpoints during training
-- **Versioning**: Model version tracking and management
-- **Compression**: Efficient model serialization
-
-## Error Handling and Validation
-
-### Data Validation
-```python
-def validate_dataset(df: pd.DataFrame) -> bool:
-    """Comprehensive dataset validation."""
-    # Check required columns
-    # Validate data types
-    # Check for missing values
-    # Verify timestamp ordering
-    # Validate physics constraints
-```
-
-### Model Validation
-```python
-def validate_predictions(predictions: np.ndarray) -> bool:
-    """Validate model predictions."""
-    # Check for NaN values
-    # Verify physical constraints (GHI >= 0)
-    # Check for reasonable value ranges
-    # Validate array shapes
-```
-
-## Testing and Quality Assurance
-
-### Unit Tests
-Each module includes comprehensive unit tests covering:
-- Data loading and preprocessing
-- Feature engineering calculations
-- Model training and inference
-- Error handling and edge cases
-
-### Integration Tests
-- End-to-end pipeline validation
-- Model compatibility testing
-- Performance benchmarking
-- Memory leak detection
-
----
-
 For usage examples and detailed API documentation, see the main [README.md](../README.md) and individual script documentation in [scripts/README.md](../scripts/README.md).
 generator = EmbeddingGenerator(config)
 generator.process_dataset(dataset_name)
