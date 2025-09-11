@@ -391,14 +391,12 @@ The system provides comprehensive evaluation metrics:
 - **MAPE**: Mean Absolute Percentage Error
 - **sMAPE**: Symmetric Mean Absolute Percentage Error
 
-## Citation
-
-If you use SPIRIT in your research, please cite:
-
+### Citation
+If you use SPIRIT in your research, please cite our paper:
 ```bibtex
 @article{spirit2025,
   title={SPIRIT: Short-term Prediction of solar IRradIance for zero-shot Transfer learning using Foundation Models},
-  author={Your Name and Others},
+  author={Aditya Mishra, T Ravindra, Srinivasan Iyengar, Shivkumar Kalyanaraman, Ponnurangam Kumaraguru},
   journal={arXiv preprint arXiv:2502.10307},
   year={2025}
 }
