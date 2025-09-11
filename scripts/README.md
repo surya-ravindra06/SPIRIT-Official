@@ -10,8 +10,6 @@ scripts/
 ├── run_embeddings.py          # Stage 2: Vision Transformer feature extraction
 ├── run_nowcasting.py          # Stage 3: Real-time irradiance prediction models
 ├── run_forecasting.py         # Stage 4: Temporal forecasting models
-├── example_model_usage.py     # Usage examples and model demonstrations
-└── test_modular_nowcasting.py # Validation and testing utilities
 ```
 
 ## Execution Scripts
