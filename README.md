@@ -11,6 +11,8 @@ SPIRIT is a novel approach leveraging foundation models for solar irradiance for
 
 The system combines pre-trained Vision Transformers (ViT) with physics-informed features to create a comprehensive solar irradiance prediction framework that works across different geographical locations without requiring local training data.
 
+This work has been accepted for presentation at the AAAI 2026 Workshop on AI for Environmental Science.
+
 ## Repository Structure
 
 ```
