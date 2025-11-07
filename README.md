@@ -410,11 +410,12 @@ The system provides comprehensive evaluation metrics:
 ### Citation
 If you use SPIRIT in your research, please cite our paper:
 ```bibtex
-@article{spirit2025,
-  title={SPIRIT: Short-Term Prediction of Solar IRradIance for Transfer Learning Using Foundation Models},
-  author={Aditya Mishra, T Ravindra, Srinivasan Iyengar, Shivkumar Kalyanaraman, Ponnurangam Kumaraguru},
-  journal={arXiv preprint arXiv:2502.10307},
-  year={2025}
+@inproceedings{spirit2025,
+  author = {Aditya Mishra and T Ravindra and Srinivasan Iyengar and Shivkumar Kalyanaraman and Ponnurangam Kumaraguru},
+  title = {SPIRIT: Short-Term Prediction of Solar IRradIance for Transfer Learning Using Foundation Models},
+  booktitle = {AI for Environmental Science Workshop, AAAI-26},
+  year = {2025},
+  note = {Accepted paper}
 }
 ```
 
