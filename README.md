@@ -111,6 +111,20 @@ cd SPIRIT
 ```bash
 pip install -r requirements.txt
 ```
+---
+
+### 📊 Useful Dataset Links
+
+> **Note:** You do **not** need to manually download these datasets — the SPIRIT pipeline automatically handles dataset access during execution.  
+> These links are provided only for **reference and transparency**.
+
+| Dataset | Description | Link |
+|----------|--------------|------|
+| **TSI** | Terrestrial Solar Irradiance dataset (SRRL, NREL) | [https://midcdmz.nrel.gov/apps/sitehome.pl?site=srrl](https://midcdmz.nrel.gov/apps/sitehome.pl?site=srrl) |
+| **ASI** | All-Sky Imager dataset (SRRL, NREL) | [https://midcdmz.nrel.gov/apps/sitehome.pl?site=srrlasi](https://midcdmz.nrel.gov/apps/sitehome.pl?site=srrlasi) |
+| **SKIPP'D** | Public Hugging Face dataset for cross-location transfer | [https://huggingface.co/datasets/solarbench/SKIPPD](https://huggingface.co/datasets/solarbench/SKIPPD) |
+
+---
 
 ## Configuration
 
