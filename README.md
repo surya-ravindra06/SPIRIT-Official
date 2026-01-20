@@ -115,7 +115,7 @@ pip install -r requirements.txt
 
 ## Prerequisites & Data Requirements
 
-### 🚨 **Important: User-Provided Data Required**
+### **Important: User-Provided Data Required**
 
 **SPIRIT requires you to provide your own meteorological dataset as `main.csv`** before running the pipeline. The system does NOT automatically download CSV/meteorological data - only sky images are auto-downloaded.
 
@@ -126,7 +126,7 @@ Download solar irradiance and meteorological measurements from:
 - **NREL SRRL**: [https://midcdmz.nrel.gov/apps/sitehome.pl?site=srrl](https://midcdmz.nrel.gov/apps/sitehome.pl?site=srrl)
 - **Alternative**: Any solar measurement dataset with the same column structure
 
-#### **2. Required CSV Columns** ⚠️ *Exact column names required*
+#### **2. Required CSV Columns**  *Exact column names required*
 
 Your `main.csv` **must contain these exact column names**:
 
@@ -149,9 +149,6 @@ Your `main.csv` **must contain these exact column names**:
 ---
 
 ### 📊 Useful Dataset Links
-
-> **Note:** You do **not** need to manually download these datasets — the SPIRIT pipeline automatically handles dataset access during execution.  
-> These links are provided only for **reference and transparency**.
 
 | Dataset | Description | Link |
 |----------|--------------|------|
