@@ -113,6 +113,41 @@ pip install -r requirements.txt
 ```
 ---
 
+## Prerequisites & Data Requirements
+
+### 🚨 **Important: User-Provided Data Required**
+
+**SPIRIT requires you to provide your own meteorological dataset as `main.csv`** before running the pipeline. The system does NOT automatically download CSV/meteorological data - only sky images are auto-downloaded.
+
+### **Required User Data: main.csv**
+
+#### **1. Data Source**
+Download solar irradiance and meteorological measurements from:
+- **NREL SRRL**: [https://midcdmz.nrel.gov/apps/sitehome.pl?site=srrl](https://midcdmz.nrel.gov/apps/sitehome.pl?site=srrl)
+- **Alternative**: Any solar measurement dataset with the same column structure
+
+#### **2. Required CSV Columns** ⚠️ *Exact column names required*
+
+Your `main.csv` **must contain these exact column names**:
+
+| Column Name | Description | Unit | Example |
+|-------------|-------------|------|---------|
+| `DATE` | Date in MM/DD/YYYY format | - | `01/15/2023` |
+| `MST` | Time in HH:MM format (Mountain Standard Time) | - | `14:30` |
+| `Global_horizontal_irradiance` | Global Horizontal Irradiance | W/m² | `450.2` |
+| `Direct_normal_irradiance` | Direct Normal Irradiance | W/m² | `780.1` |
+| `Diffuse_horizontal_irradiance` | Diffuse Horizontal Irradiance | W/m² | `120.5` |
+| `Air_temperature` | Air temperature | °C | `25.3` |
+| `Rel_humidity` | Relative humidity | % | `65.0` |
+| `Avg_wind_speed` | Average wind speed | m/s | `3.2` |
+| `Avg_wind_direction` | Average wind direction | degrees | `180.0` |
+| `Pressure` | Atmospheric pressure | hPa | `1013.2` |
+| `Precipitation` | Precipitation | mm | `0.0` |
+| `Zenith_angle` | Solar zenith angle | degrees | `45.2` |
+| `Azimuth_angle` | Solar azimuth angle | degrees | `180.5` |
+
+---
+
 ### 📊 Useful Dataset Links
 
 > **Note:** You do **not** need to manually download these datasets — the SPIRIT pipeline automatically handles dataset access during execution.  
